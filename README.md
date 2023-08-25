@@ -3,3 +3,5 @@
 
 공부하는 코드를 Git에 Upload 하고 있으며,
 공부 내용은 Blog에 정리중입니다.
+
+Blog link : https://audtjqxx.tistory.com/category/JavaScript%20Study
