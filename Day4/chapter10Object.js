@@ -32,8 +32,7 @@ obj[key] = 'world'; //대괄호를 이용하여 프로퍼티를 동적으로 생
 
 console.log(obj)
 
-
-// 객체에 묶여있는 함수
+// 객체에 묶여있는 함수 = 메서드
 var circle ={
     radius : 5,
 
@@ -41,4 +40,26 @@ var circle ={
         return 2 * this.radius;
     }
 };
-console.log(circle.getDiameter()); //. 을 이용하여 사용가능
+
+// 객체의 프로퍼티에 접근하는 방법 2가지
+console.log(circle.radius);
+console.log(circle['radius']);
+ 
+// 프로퍼티의 값을 변경하는 갱신하는 방법
+
+obj = {
+    prompTest : 'test'
+};
+
+obj.prompTest = 'test1';
+console.log(obj.prompTest);
+obj['prompTest']='test2';
+console.log(obj.prompTest);
+
+//프로퍼티의 값을 동적으로 생성하는 방법
+obj.prompTest1 = "add test";
+console.log(obj);
+
+//프로퍼터의 값을 삭제
+delete obj.prompTest1
+console.log(obj);
